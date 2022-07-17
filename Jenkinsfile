@@ -23,7 +23,7 @@ pipeline {
 
   stage('Deploy') {
     steps {
-      	  sh '''sudo cp /home/ec2-user/jenkins_slave1/workspace/Tomcat_pipeline/target/*.war /opt/apache-tomcat-10.0.22/webapps'''
+      	  sh '''sudo cp ./target/*.war /opt/apache-tomcat-10.0.22/webapps'''
     }
   }
 
